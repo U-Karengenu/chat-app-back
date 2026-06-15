@@ -3,9 +3,13 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'beginner-development-secret-key'
-DEBUG = True
-ALLOWED_HOSTS = []
+SECRET_KEY = 'secret-key'
+DEBUG = False
+ALLOWED_HOSTS = [
+    ".onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -35,6 +39,24 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+#cors
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "https://gustavoandtas.vercel.app",
+    'https://chat-front-one-beryl.vercel.app'
+]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://chat-front-one-beryl.vercel.app/login",
+    "https://chat-app-back-pk12.onrender.com",
 ]
 
 ROOT_URLCONF = 'messaging_project.urls'
