@@ -9,6 +9,7 @@ ALLOWED_HOSTS = [
     ".onrender.com",
     "localhost",
     "127.0.0.1",
+    "https://chat-app-back-pk12.onrender.com"
 ]
 
 INSTALLED_APPS = [
@@ -47,7 +48,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "https://gustavoandtas.vercel.app",
-    'https://chat-front-one-beryl.vercel.app'
+    'https://chat-front-ruddy-chi.vercel.app'
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
