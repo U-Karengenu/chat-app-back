@@ -47,7 +47,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:5173",
-    "https://gustavoandtas.vercel.app",
     'https://chat-front-ruddy-chi.vercel.app'
 ]
 CORS_ALLOW_CREDENTIALS = True
@@ -100,10 +99,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'http://127.0.0.1:5173',
-]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -117,8 +112,6 @@ REST_FRAMEWORK = {
 
 import os
 import dj_database_url
-
-ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost', '127.0.0.1']
 
 
 
